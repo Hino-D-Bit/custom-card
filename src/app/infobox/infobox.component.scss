@@ -1,0 +1,47 @@
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  
+
+ .inner{
+    color: var(--panelHover);
+    padding: 1em;
+    border-radius: 10px;
+    //width: calc(100% - 1em);
+    width: 25em;
+    clip-path: circle(10% at 92% 26%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    
+    &:hover {
+    clip-path: circle(75%);
+    background: var(--panelHover);
+    }
+
+    span {
+      float: right;
+      color: var(--textColor);
+      font-weight: bold;
+      transition: color .5s;
+      position: relative;
+      margin-right: 3.5%;
+      font-size: 20px;
+    }
+
+    &:hover span {
+      color: var(--panelHover);
+    }
+
+    h1 {
+      color: var(--headingColor);
+      margin: 0
+    }
+
+    p {
+      color: var(--textColor);
+      font-size: 0.8rem;
+    }
+  }
+  
+}

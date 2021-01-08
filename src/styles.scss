@@ -1,0 +1,37 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Nunito:wght@800&display=swap");
+
+html {
+  --title-color-white: rgba(255, 255, 255, 0.8);
+  --title-color-black: rgba(0, 0, 0, 0.8);
+  --infoHover: #f4f4f4;
+}
+
+html[theme="light"] {
+  --background: #fcfcfc;
+  --panelHover: #ebebeb;
+
+  --headingColor: #0077ff;
+  --textColor: #333333;
+  --shadowColor: rgba(0, 0, 0, 0.3);
+}
+
+html[theme="dark"] {
+  //  --background: #212121;
+  --background: #444444;
+  --panelHover: #333333;
+  --headingColor: #3694ff;
+  --textColor: #b5b5b5;
+  --shadowColor: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: var(--background);
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  transition: all 0.5s ease-in-out;
+  font-family: "Lato", sans-serif;
+}

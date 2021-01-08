@@ -1,0 +1,34 @@
+<div class="buttonTheme">
+	<button *ngIf="lightTheme" type="button" (click)="changeTheme(lightTheme = !lightTheme)" class="btn btn-dark"> Change theme!</button>
+	<button *ngIf="!lightTheme" type="button" (click)="changeTheme(lightTheme = !lightTheme)"  class="btn btn-light"> Change theme!</button>
+</div>
+
+<!--
+
+<app-infobox> </app-infobox>
+
+<div class="card-style-gradient">
+	<h2 class="text-card-position">Design+Code <br> Design Files </h2>
+		<div class="text-card-position caption-card">50GB of files</div>
+		<div class="text-card-position normal-text">We keep all the design files of the courses here in on pace, so that
+			you can focus more on learning!</div>
+</div>
+
+<div class="card-style-image">
+	<h2 class="text-card-position">The Eye of Universe</h2>
+	<div class="text-card-position caption-card">The Helix Nebula</div>
+	<div class="text-card-position normal-text">Is a large planetary nebula (PN) located in the constellation Aquarius.
+		Discovered by Karl Ludwig Harding, probably before 1824, this object is one of the closest to the Earth of all
+		the bright planetary nebulae. </div>
+</div>
+
+<div class="card-style"></div>
+
+<div class="card-style-glass"></div>
+
+-->
+
+
+<app-card></app-card>
+
+<div style="margin-bottom: 50px"></div>
