@@ -16,7 +16,12 @@ $width-card: 35em;
   background-size: cover;
 }
 
-.card-style:hover {
+.card {
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.card:hover {
   box-shadow: 0 15px 10px var(--shadowColor);
 }
 
@@ -60,7 +65,7 @@ $width-card: 35em;
     }
 
     .info-normal-text {
-      $width-card: 35em;
+      width: $width-card;
       color: var(--title-color-white);
     }
   }
